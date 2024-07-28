@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel with BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="" alt="Carousel Image" id="carouselImage">
+        </div>
+        <button id="carouselButton">Check BMI</button>
+        <div id="quoteContainer">"Stay Fit, Stay Healthy!"</div> 
+    </div>
+
+    <div class="container" id="bmiContainer">
+        <h1>BMI Calculator</h1>
+        <form id="bmiForm">
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+            </div>
+            <div class="input-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+            </div>
+            <button type="button" id="formButton" onclick="calculateBMI()">Calculate BMI</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
